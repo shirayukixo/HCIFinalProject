@@ -58,7 +58,7 @@ const textNodes = [
                nextText: 3
             },
             {
-                text: 'Drink the water',
+                text: 'Look at the tap water',
                 nextText: 3
             },
             {
@@ -67,7 +67,7 @@ const textNodes = [
                 nextText: 2
             },
             {
-                text: 'Wash your cat',                
+                text: 'Say hi to it',                
                 nextText: 3
             },
         ]
@@ -85,30 +85,40 @@ const textNodes = [
     },
     {
         id: 3,
-        text: 'BAD DECISION, Try again! You see a tap water is running. What do you do?',
+        text: 'BAD DECISION, Try again!',
         options: [
             {
-               text: 'Leave it running',               
-               nextText: 4
-            },
-            {
-                text: 'Drink the water',                
+                text: 'Try again',
                 nextText: 4
-            },
-            {
-                text: 'Close the tap',
-                setState: { tapClosed: true },
-                nextText: 2
-            },
-            {
-                text: 'Wash your cat',                
-                nextText: 4
-            },
+             }, 
         ]
     },
     {
         id: 4,
-        text: 'You chose wrongly again! The game will now restart',
+        text: 'You see a tap water is running. What do you do?',
+        options: [
+            {
+                text: 'Leave it running',               
+                nextText: 5
+             },
+             {
+                 text: 'Look at the tap water',
+                 nextText: 5
+             },
+             {
+                 text: 'Close the tap',
+                 setState: { tapClosed: true },
+                 nextText: 2
+             },
+             {
+                 text: 'Say hi to it',                
+                 nextText: 5
+             },          
+        ]
+    },
+    {
+        id: 5,
+        text: 'WHY U CHOOSE WRONGLY AGAIN! The game will now restart, choose wisely ok',
         options: [
             {
                text: 'Restart',
