@@ -51,30 +51,30 @@ function selectOption(option) {
 const textNodes = [
     {
         id: 1,        
-        text: 'You see a tap water is running. What do you do?',
+        text: 'Which of the choices below will help to reduce the excessive consumption of water?',
         options: [
             {
-               text: 'Leave it running',               
+               text: 'Take long showers',               
                nextText: 3
             },
             {
-                text: 'Look at the tap water',
+                text: 'Ignore pipes that are leaking water',
                 nextText: 3
             },
             {
-                text: 'Close the tap',
+                text: 'Close the tap water while brushing your teeth',
                 setState: { tapClosed: true },
                 nextText: 2
             },
             {
-                text: 'Say hi to it',                
+                text: 'Use the water from the hose to play with your friends',
                 nextText: 3
-            },
+            }
         ]
     },
     {
         id: 2,
-        text: 'Good job! You saved the earth! :3',
+        text: 'Good job! Your choice will save our Earth!',
         options: [
             {
                 text: 'Click here to play minigame!',
@@ -85,7 +85,7 @@ const textNodes = [
     },
     {
         id: 3,
-        text: 'BAD DECISION, Try again!',
+        text: 'Wrong choice... Please try again',
         options: [
             {
                 text: 'Try again',
@@ -95,30 +95,30 @@ const textNodes = [
     },
     {
         id: 4,
-        text: 'You see a tap water is running. What do you do?',
+        text: 'Which of the choices below will help to reduce the excessive consumption of water?',
         options: [
             {
-                text: 'Leave it running',               
+               text: 'Take long showers',               
+               nextText: 5
+            },
+            {
+                text: 'Ignore pipes that are leaking water',
                 nextText: 5
-             },
-             {
-                 text: 'Look at the tap water',
-                 nextText: 5
-             },
-             {
-                 text: 'Close the tap',
-                 setState: { tapClosed: true },
-                 nextText: 2
-             },
-             {
-                 text: 'Say hi to it',                
-                 nextText: 5
-             },          
+            },
+            {
+                text: 'Close the tap water while brushing your teeth',
+                setState: { tapClosed: true },
+                nextText: 2
+            },
+            {
+                text: 'Use the water from the hose to play with your friends',
+                nextText: 3
+            }  
         ]
     },
     {
         id: 5,
-        text: 'WHY U CHOOSE WRONGLY AGAIN! The game will now restart, choose wisely ok',
+        text: 'Unfortunately that is still the wrong choice.. The game will now restart',
         options: [
             {
                text: 'Restart',
