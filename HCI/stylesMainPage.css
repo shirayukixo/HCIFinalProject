@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-	background-color: #D2D9B5;
+    background-color: #D2D9B5;
 }
 
 #main-background {
@@ -102,11 +102,11 @@ body {
     width:60%;
 }
 
+.btnOption:hover {
+    border-color: black;
+}
+
 a {
     text-decoration: none;
     color: #FFFEFE;
-}
-
-.btnOption:hover {
-    border-color: black;
 }
