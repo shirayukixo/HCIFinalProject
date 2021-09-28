@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: radial-gradient(#71d6e4, #71a7e4);}
+
+.game_title{ /* Game Title */
+    display: flex;
+    justify-content: center;
+    color: blanchedalmond;
+    font-size: 40px;}
+
+.game_info{ /* Container for game information */
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 30px;}
+
+#game_facts{ /* Used to show statistic of the animal when matched */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+    background: radial-gradient(white, #acacac);}
+
+.game_container{ /* Container for the flip card */
+    display: grid;
+    margin: 50px;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    justify-content: space-around;
+    perspective: 1000px;}
+
+    .card{ /* Container for front and back card */
+        position: relative;
+        width: 200px;
+        height: 200px;}
+
+        .card_both{ /* Styles both the card regardless front or back */
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            border-radius: 12px;
+            border: 2px solid black;
+            overflow: hidden;
+            backface-visibility: hidden;
+            transition: transform 0.7s;
+            height: 100%;
+            width: 100%;}
+
+        .card_front{ /* Flips and style the front card by default */
+            transform: rotateY(180deg);}
+
+            .card_front > img{ /* Set the size of image */
+                transition: transform 0.5s;
+                width: 100%;
+                height: 100%;}
+
+        .card_back{ /* Style the back card by default */
+            background-color: white;}
+
+            .card_back > img{ /* Set the size of the image */
+                transition: transform 0.3s;
+                width: 100%;
+                height: 100%;}
+
+            .card_back:hover{ /* When hover, changed color of back card */
+                background-color: antiquewhite;}
+
+            .card_back:hover img{ /* When hover, enlarge the back card image */
+                transform: scale(1.1);}
+
+    .card.visible .card_front{ /* Flip the front card. When card.visible is applied instead of Card, the front card will be shown */
+        transform: rotateY(0);}
+
+    .card.visible .card_back{ /* Unflip the back card. When card.visible is applied instead of Card, the back will not be shown */
+        transform: rotateY(-180deg);}
+
+    .card_matched .card_front > img{ /* When card matched, perform animation */
+        animation: shrink 1.2s linear infinite 1s;}
+
+        @keyframes shrink { /* Animation attribute */
+            0%, 100%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.1);
+            }
+        }
