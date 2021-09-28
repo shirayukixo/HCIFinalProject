@@ -1,0 +1,112 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Delius Unicase', cursive;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #D2D9B5;
+}
+
+#main-background {
+    background-color: #B6DBEF; 
+    position: relative;
+    width: 1440px;
+    height: 700px;
+}
+
+ #cloud-Line1, #cloud-Line2,#cloud-Line3,#cloud-Line4, #cloud-Line5{
+    background: url(images/white\ cloud.png); 
+    background-size:180px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#cloud-Line1,#cloud-Line2{
+    animation-name:clouds1;
+    animation-duration:4s;
+}
+
+#cloud-Line3,#cloud-Line4, #cloud-Line5{
+    animation-name:clouds2;
+    animation-duration:4s;
+}
+
+#cloud-Line1{
+    right:20px;
+    top:10px;
+    left:300px;
+}
+
+#cloud-Line2{ 
+    right:20px;
+    top:10px;
+    left:1050px;
+}
+
+#cloud-Line3{  
+    top: 180px;
+    left:80px;
+}
+
+#cloud-Line4{
+    top: 180px;
+    left:800px;
+}
+
+#cloud-Line5{
+    top: 180px;
+    left:1300px;
+}
+
+@keyframes clouds1{
+    0%   {left: 500px; top: 0px;}
+}
+
+@keyframes clouds2{
+    0%   { left:550px; top:180px;}
+}
+
+#M-Planet{
+    background: url(images/M-planet\ logo\ no\ shadow.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-bottom: 340px;
+    width: 445px;
+    height: 445px;
+    margin-left:125px;
+    background-size: 400px 500px;   /*height width */
+}
+
+.btn-grid {
+    display: grid;
+    gap: 25px;
+    margin-top: 350px;
+}
+
+.btnOption {
+    background-color: #E77D5C; 
+    border:none;
+    border-radius: 15px;
+    box-shadow: 5px 4px rgb(134, 134, 134);   
+    padding: 5px 10px;
+    font-size:30px;
+    margin-left:140px;
+    cursor: pointer;
+    width:60%;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFEFE;
+}
+
+.btnOption:hover {
+    border-color: black;
+}
