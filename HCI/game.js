@@ -37,7 +37,7 @@ function showOption(option) {
 function selectOption(option) {
     const nextTextNodeID = option.nextText
     if (nextTextNodeID == -1) {
-        window.location.replace("minigame.html")
+        window.location.replace("./Minigame/minigame.html")
     }
     else if (nextTextNodeID < -1) {
         return startGame()
