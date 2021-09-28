@@ -20,7 +20,7 @@ body {
 }
 
  #cloud-Line1, #cloud-Line2,#cloud-Line3,#cloud-Line4, #cloud-Line5{
-    background: url(images/white\ cloud.png); 
+    background: url(white\ cloud.png); 
     background-size:180px;
     width: 200px;
     height: 200px;
@@ -74,7 +74,7 @@ body {
 }
 
 #M-Planet{
-    background: url(images/M-planet\ logo\ no\ shadow.svg);
+    background: url(M-planet\ logo\ no\ shadow.svg);
     background-repeat: no-repeat;
     position: absolute;
     margin-bottom: 340px;
