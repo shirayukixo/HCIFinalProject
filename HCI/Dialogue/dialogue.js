@@ -59,7 +59,7 @@ const textNodes = [
             },
             {
                 text: 'Steal their babies',
-                nextText: 3
+                nextText: 4
             },
             {
                 text: 'Protect their habitat',
@@ -68,7 +68,7 @@ const textNodes = [
             },
             {
                 text: 'Hunt them for their fur',
-                nextText: 3
+                nextText: 5
             }
         ]
     },
@@ -85,25 +85,45 @@ const textNodes = [
     },
     {
         id: 3,
-        text: 'Oh no! That is the wrong choice! You have one more try left to save our pandas',
+        text: 'Oh no! Now the pandas have no food to eat :(',
         options: [
             {
                 text: 'Try again',
-                nextText: 4
+                nextText: 6
              }, 
         ]
     },
     {
         id: 4,
+        text: 'Oh no! The pandas are sad now :(',
+        options: [
+            {
+                text: 'Try again',
+                nextText: 6
+             }, 
+        ]
+    },
+    {
+        id: 5,
+        text: 'Oh no! There will be no pandas left :(',
+        options: [
+            {
+                text: 'Try again',
+                nextText: 6
+             }, 
+        ]
+    },
+    {
+        id: 6,
         text: 'Our pandas need your help! Choose an option that will save them',
         options: [
             {
                text: 'Cut all the bamboo trees',               
-               nextText: 5
+               nextText: 7
             },
             {
                 text: 'Steal their babies',
-                nextText: 5
+                nextText: 7
             },
             {
                 text: 'Protect their habitat',
@@ -112,13 +132,13 @@ const textNodes = [
             },
             {
                 text: 'Hunt them for their fur',
-                nextText: 5
+                nextText: 7
             } 
         ]
     },
     {
-        id: 5,
-        text: 'Unfortunately that will not save our pandas.... Please try again!',
+        id: 7,
+        text: 'Hey! That will not save our pandas :(',
         options: [
             {
                text: 'Restart',
