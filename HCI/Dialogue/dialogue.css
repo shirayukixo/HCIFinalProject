@@ -1,0 +1,72 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+    font-size: larger;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; 
+    background-color: #D2D9B5;
+
+}
+
+.dialogue-background {
+    background-color: #D2D9B5;    
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80%;
+    margin-top: 10%;
+    margin-bottom: 25%;
+    background-size: cover;
+    position: relative;   
+
+}
+
+.dialogue {
+    width: 100%;    
+    background-color: #C4C4C4;
+    padding: 10px;
+    border-radius: 5px;    
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.panda {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+    margin-top: 5%;
+}
+
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);    
+    row-gap: 25%;
+    column-gap: 10%;
+    margin-top: 10%;
+}
+
+.btn {
+    background-color: #EEEDED;
+    border: 1px solid #EEEDED;    
+    border-radius: 25px;
+    padding: 15px 60px;
+    color: #000000;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
