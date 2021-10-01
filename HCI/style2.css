@@ -313,16 +313,16 @@ body{
 
 .box2 {
     width: 625px;
-    height: 380px;
+    height: 500px;
     position: absolute;
-    top: 335px;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     background:  #C4C4C4;
     text-align: left;
     border-radius: 15px;
     box-sizing: border-box;
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 
 .heading3 {
