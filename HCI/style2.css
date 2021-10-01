@@ -334,62 +334,37 @@ body{
     color: #000000;
     position: absolute;
     width: 500px;
-    left: 300px;
+    left: 200px;
 }
-
-.column {
-    flex-basis: 15%; 
-    padding-top: 150px; 
-    min-width:10px; 
-    margin-bottom:10px;
-  }
-
-  .column img {
-    display: block; 
-    width: 80; 
-    height: 80;
-  }
 
   .row {
     display: flex; 
-    align-items: center; 
     flex-wrap: wrap; 
     justify-content: space-around;
   }
 
-  .column2 {
-    flex-basis: 15%; 
-    padding: 10px; 
-    min-width:10px; 
+  .column, .column2,.column3{
+    flex-basis:15%; 
+    min-width:5px; 
+    padding-left:80px;
     margin-bottom:10px;
-  }
+}
+
+.column,.column2,.column3 img {
+    display: block; 
+}
+
+.column{
+    padding-top:130px;
+}
+
+.name{
+    margin:5px;
+}
 
   .back2 {
     position: absolute;
     left: 1400px;
     top: 800px;
 }
-.back2 button{
-    background: #E77D5C;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    width: 150px;
-    height: 50px;
-    font-family: 'Delius Unicase', cursive;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    color: #EEEDED;
-    border: none;
-    font-size: 30px;
-}
-.back2 button:hover{
-    cursor: pointer;
-    background-color: white;
-    color: #E77D5C;
-}
-
-
-
-
 
