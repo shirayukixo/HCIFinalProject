@@ -128,7 +128,7 @@ class MixOrMatch {
         }, 900);
 
         setTimeout(() => {
-            window.location.replace('../World Map/main.html');
+            window.location.replace('../mainmap.html');
         }, 10000);
     }
 }

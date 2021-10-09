@@ -100,13 +100,15 @@ body {
     margin-left:140px;
     cursor: pointer;
     width:60%;
+    text-decoration: none;
+    color: #FFFEFE;
 }
 
 .btnOption:hover {
     border-color: black;
 }
 
-a {
+/* a {
     text-decoration: none;
     color: #FFFEFE;
-}
+} */

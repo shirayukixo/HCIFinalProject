@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0%;
-    font-family: 'Delius Unicase', cursive;
+    font-family: cursive;
     background: #D2D9B5;
 }
 .mic{
@@ -313,13 +313,14 @@ body{
 
 .box2 {
     width: 625px;
-    height: 500px;
+    height: fit-content;
     position: absolute;
     top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     background:  #C4C4C4;
-    text-align: left;
+    text-align: justify;
+    font-size: 18px;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 50px 50px;
@@ -343,7 +344,7 @@ body{
     justify-content: space-around;
   }
 
-  .column, .column2,.column3{
+  .column, .column2, .column3{
     flex-basis:15%; 
     min-width:5px; 
     padding-left:80px;
@@ -351,7 +352,7 @@ body{
 }
 
 .column,.column2,.column3 img {
-    display: block; 
+    display: block;
 }
 
 .column{
