@@ -105,10 +105,7 @@ body {
 }
 
 .btnOption:hover {
-    border-color: black;
+    cursor: pointer;
+    background-color: white;
+    color: #E77D5C;
 }
-
-/* a {
-    text-decoration: none;
-    color: #FFFEFE;
-} */
