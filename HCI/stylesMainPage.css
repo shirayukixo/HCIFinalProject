@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Delius Unicase', cursive;
+    font-family: Delius, cursive;
 }
 
 body {
@@ -97,9 +97,9 @@ body {
     box-shadow: 5px 4px rgb(134, 134, 134);   
     padding: 5px 10px;
     font-size:30px;
-    margin-left:140px;
+    margin-left:110px;
     cursor: pointer;
-    width:60%;
+    width:65%;
     text-decoration: none;
     color: #FFFEFE;
 }
