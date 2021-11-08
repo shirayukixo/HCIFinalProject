@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>Word Search</title>
+        <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Word Search Game!</h1>
+		<h2 id = "instructions"></h2>
+        <div class="droplet">
+            <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+            <div class="score">100</div>
+        </div>
+        <div>
+            <img src="../images/audio.svg" class="audio">
+        </div>
+		
+        <div id = "wordlist"></div>
+		<div id = "wordboard"></div>
+        <button id = "newGameButton" type = "button">New Game</button>
+		<button id = "solveButton" type = "button">Answers</button>
+        <div class="back">
+            <a href="africaQues3.html"><button type="button">Back</button></a>
+        </div>
+
+		<link rel = "stylesheet" type="text/css" href = "wordsearch.css">
+
+		<script src = https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+
+		<script src = "wordpaths.js"></script>
+		<script src = "wordsearchcontroller.js"></script>
+		<script src = "wordsearchlogic.js"></script>
+		<script src = "wordsearchview.js"></script>
+
+		<script>	
+			$(document).ready( function() {
+				new WordSearchController("#wordboard", "#wordlist", "#solveButton", "#newGameButton", "#instructions", 
+					"#wordTheme");
+			})
+		</script>
+	</body>
+</html>

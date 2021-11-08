@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="africa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="ques.js"></script>
+    <title>Question 1 - Africa</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <h1>Question 1</h1> 
+            <p id="ques">Which of the below does not cause soil degradation?</p>
+            <div id="option-buttons" class="btn-grid">
+                <button class="btn" onclick="openModal()">Deforestation</button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Deforestation cause soil degradation on the account of exposing soil minerals by removing trees and crop cover,
+                            which support the availability of humus and litter layers on the surface of the soil. Vegetation voer primarily promotes the binding of the soil 
+                            together and soil formation, hence when it is removed, it considerably affects the capabilities of the soil. When trees
+                            are removed by logging, infiltration rates become elevated and the soil remains bare and exposed to erosion and the buildup of toxicities. 
+                            Some of the contributing activites include logging and slash and burn tecniques used by individuals who invade forest areas for farming.
+                        </h3>
+                        <img src="../images/deforestation.jpg" alt="deforestation" width="100%">
+                        <p>Deforestation</p>
+                        <img src="../images/Logging.jpg" alt="deforestation" width="100%">
+                        <p>Logging</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="openModal2()">Excessive Use of Fertilizers</button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Fertilizers are liquid that feed the plant with the required nutrients, while pesticides are used in plants for eliminating, preventing or controlling pests that damage the crops.
+                            However, the excessive use and the misuse of pesticides and chemical fertilizers kill organisms that assist in binding the soil together.
+                            Most agricultural practices involving the use of fertilizers and pesticides often entail misuse or excessive application, thereby contributing to the killing
+                            of soil's beneficial bacteria and other micro-organisms. The complex forms of the fertilizer's chemicals are also responsible for denaturing essential soil minerals, giving rise to nutrient losses from the soil.
+                        </h3>
+                        <img src="../images/fertilizers.jpg" alt="deforestation" width="100%">
+                        <p>Farmers spraying fertilizers and pesticides</p>
+                        <img src="../images/pesticides.jpg" alt="deforestation" width="100%">
+                        <p>Trucks used to spray fertilizer and pesticides</p>
+                        <img src="../images/fertilizer2.jpg" alt="deforestation" width="100%">
+                        <p>Fertilizer and pesticides</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn1" onclick="openModal3(), changeColor()">Planting Trees</button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <h2>CORRECT ANSWER!</h2>
+                        <h3 style="text-align: justify;">Planting more trees and plants reduces soil erosion. Trees and woody vegetation are good for agricultural land. Trees reduce the effect of erosive forces using their root systems and foliage.
+                            Trees have thick root systems that branch into fine filaments and create a network. This network of root systems help stabilize the soil around the tree and hold it in place. Trees also reduce run-off of nutrients and soil
+                            sediment in-stream. Tree roots also improve the drainage of the soil. 
+                        </h3>
+                        <img src="../images/plant1.jpg" alt="deforestation" width="100%">
+                        <p>Planting trees</p>
+                        <img src="../images/plant2.jpg" alt="deforestation" width="100%">
+                        <p>Tree roots can stabilize soil</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+            </div>   
+        <div class="elephant">
+            <img src="../images/africa_elephant.png" width="100%">
+        </div>
+        <a href="africaQues2.html"><button id="next2"><img src="../images/right.png" alt="right" width="100%"></button></a>
+        <a href="africa.html"><button id="previous2"><img src="../images/left.png" alt="right" width="100%"></button></a>
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>

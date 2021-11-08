@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="africa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="africa.js"></script>
+    <title>Africa</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <div class="paragraph">
+                <p id="text">Hello Dora the Explorer! Welcome to Africa, the world's second largest, and second-most populated continent after Asia.</p>
+
+                <button id="next" onclick="change()"><img src="../images/right.png" alt="right" width="100%"></button>
+                <button id="previous" onclick="change2()" style="display: none;"><img src="../images/left.png" alt="left" width="100%"></button>
+
+                <button id = "imgButton" type = "button" style="display: none;" onclick="openModal()"><img src="../images/img.png" width="100%"></button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <p>Soil degradation</p>
+                        <img src="../images/Desertification.jpg" alt="soil degradation" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                
+                <button id = "imgButton2" type = "button" style="display: none;" onclick="openModal2()"><img src="../images/img.png" width="100%"></button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <p>Clog Waterways</p>
+                        <img src="../images/clogwaterways.png" alt="soil degradation" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button id = "imgButton3" type = "button" style="display: none;" onclick="openModal3()"><img src="../images/img.png" width="100%"></button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <p>Crop reduction</p>
+                        <img src="../images/foodshort.jpg" alt="soil degradation" width="100%">
+                        <p>Food shortage</p>
+                        <img src="../images/foodshort2.jpg" alt="soil degradation" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button id = "imgButton4" type = "button" style="display: none;" onclick="openModal4()"><img src="../images/img.png" width="100%"></button>
+                <div id="id04" class="modal">   
+                    <div class="container">
+                        <p>Victoria Falls, Zambia and Zimbabwe</p>
+                        <img src="../images/africa1.jpg" alt="soil degradation" width="100%">
+                        <p>Lake Naivasha, Kenya</p>
+                        <img src="../images/africa2.jpg" alt="soil degradation" width="100%">
+                        <p>Abu Simbel, Egypt</p>
+                        <img src="../images/africa3.jpg" alt="soil degradation" width="100%">
+                        <p>Cape Town</p>
+                        <img src="../images/capetown.jpg" alt="soil degradation" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button id = "imgButton5" type = "button" style="display: none;" onclick="openModal5()"><img src="../images/img.png" width="100%"></button>
+                <div id="id05" class="modal">   
+                    <div class="container">
+                        <p>Bo-kaap, South Africa</p>
+                        <img src="../images/bo-kaap.jpg" alt="soil degradation" width="100%">
+                        <p>Kruger National Park</p>
+                        <img src="../images/kruger.jpg" alt="soil degradation" width="100%">
+                        <p>Garden Route National Park</p>
+                        <img src="../images/gardenroute.jpg" alt="soil degradation" width="100%">
+                        <p>The Drakensberg, Kwazulu-Natal</p>
+                        <img src="../images/drakensberg.jpg" alt="soil degradation" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="elephant">
+            <img src="../images/africa_elephant.png" width="100%">
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>

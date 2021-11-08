@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="africa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="ques.js"></script>
+    <title>Question 2 - Africa</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <h1>Question 2</h1> 
+            <p id="ques">Which of the below is not the effect of soil degradation?</p>
+            <div id="option-buttons" class="btn-grid">
+                <button class="btn" onclick="openModal()">Drought and Aridity</button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Drought is a period of unusually persistant dry weather, while aridity is the state of being 
+                             very dry and without enough rain for plants. Drought and aridity are problems highly influenced and amplified by soil degradation. As much as it's a
+                             concern associated with natural environments in arid and semi-arid areas, the UN recognizes the fact that drought and aridity are anthropogenic induced factors 
+                             especially as an outcome of soil degradation. Hence, the contributing factors to soil quality decline such as overgrazing, poor tillage methods, and 
+                             deforestation are also the leading causes of desertification characterized by droughts and arid conditions. 
+                        </h3>
+                        <img src="../images/drought.jpg" alt="deforestation" width="100%">
+                        <p>Drought in Africa</p>
+                        <img src="../images/aridity.png" alt="deforestation" width="100%">
+                        <p>Aridity Index for Africa</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn1" onclick="openModal2(), changeColor()">Decrease Flooding</button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <h2>CORRECT ANSWER!</h2>
+                        <h3 style="text-align: justify;">Soil degradation will increase flooding instead of decreasing it. The land is commonly altered from its natural landscape
+                             when it rids its physical composition from soil degradation. For this reason, the transformed land is unable to soak up water, making flooding more frequent. 
+                             In other words, soil degradation takes away the soil's natural capability of holding water thus contributing to more and more cases of flooding.
+                        </h3>
+                        <img src="../images/flood.jpg" alt="deforestation" width="100%">
+                        <p>Flood in Zimbabwe on March 21, 2019</p>
+                        <img src="../images/flood2.jpg" alt="deforestation" width="100%">
+                        <p>Flood in Mogadishu, Somalia on October 21, 2019</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="openModal3()">Pollution and Clogging</button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Most of the soil eroded from the land together with the chemical fertilizers and pesticides utilized in agricultural fields are discharged 
+                            into waterways and streams. With time, the sedimentation process can clog waterways, resulting in water scarcity. The argicultural fertimizers and pesticides also damage 
+                            marine and freshwater ecosystems and limit the domestic uses of water for the populations that depend on them for survival.
+                        </h3>
+                        <img src="../images/pollution2.jpg" alt="deforestation" width="100%">
+                        <p>Water Pollution in Africa</p>
+                        <img src="../images/clogged.png" alt="deforestation" width="100%">
+                        <p>Clogged Waterways</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+            </div>   
+        <div class="elephant">
+            <img src="../images/africa_elephant.png" width="100%">
+        </div>
+        <a href="africaQues3.html"><button id="next2"><img src="../images/right.png" alt="right" width="100%"></button></a>
+        <a href="africaQues1.html"><button id="previous2"><img src="../images/left.png" alt="right" width="100%"></button></a>
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>
