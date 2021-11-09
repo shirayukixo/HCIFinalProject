@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="antarctica.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="antarcticaQues.js"></script>
+    <title>Question 3 - Antartica</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <h1>Question 3</h1> 
+            <p id="ques">What are the possible solution for global warming?</p>
+
+            <div id="option-buttons" class="btn-grid">
+
+                <button class="btn" onclick="openModal()">Using Energy-Efficient Appliances</button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <h2>CORRECT ANSWER!</h2>
+                        <h3 style="text-align: justify;">Since they were first implemented nationally in 1987, efficiency standards for dozens of appliances and products have kept 2.3 billion tons of carbon dioxide out of the air. That’s about the same amount as the annual carbon pollution coughed up by nearly 440 million cars. Energy efficiency is the lowest-cost way to reduce emissions.
+                        </h3>
+                        <img src="../images/antarctica20.jpg" alt="Energy Efficient Appliances" width="100%">
+                        <p>Energy Efficient Appliances</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button class="btn" onclick="openModal2()">Increase Water Waste</button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Saving water reduces carbon pollution. That's because it takes a lot of energy to pump, heat, and treat your water. The EPA estimates that if just one out of every 100 American homes were retrofitted with water-efficient fixtures, about 100 million kilowatt-hours of electricity per year would be saved—avoiding 80,000 tons of global warming pollution.
+                        </h3>
+                        <img src="../images/antarctica21.jpg" alt="Water Waste" width="100%">
+                        <p>Water Waste</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button class="btn" onclick="openModal3()">Reduce the Usage of Public Transport</button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Choosing to live in walkable smart-growth cities and towns with quality public transportation leads to less driving, less money spent on fuel, and less pollution in the air. Less frequent flying can make a big difference, too. Air transport is a major source of climate pollution.
+                        </h3>
+                        <img src="../images/antarctica22.jpg" alt="Walkable City" width="100%">
+                        <p>Walkable City</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+            </div>   
+        <div class="penguin">
+            <img src="../images/antarctica_penguin.png" width="100%">
+        </div>
+        <a href="antarcticaMinigame.html"><button id="next2"><img src="../images/right.png" alt="right" width="100%"></button></a>
+        <a href="antarctica.html"><button id="previous2"><img src="../images/left.png" alt="right" width="100%"></button></a>
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>

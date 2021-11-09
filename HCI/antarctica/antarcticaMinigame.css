@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Dosis', sans-serif;
+    background: #fffef2;
+}
+
+.droplet{
+    position: absolute;
+    width: 150px;
+    left: 1400px;
+    top: 35px;
+
+}
+
+.score{
+    position: absolute;
+    left: 55px;
+    top: 10px;
+    font-family: 'Delius', cursive;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+    border: none;
+    font-size: 35px;
+}
+
+.back {
+    position: absolute;
+    left: 1300px;
+    top: 770px;
+    z-index: 1;
+}
+.back button{
+    background: #E77D5C;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+    font-family: 'Delius', cursive;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #EEEDED;
+    border: none;
+    font-size: 30px;
+}
+.back button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #E77D5C;
+}
+
+

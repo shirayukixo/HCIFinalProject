@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="antarctica.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="antarctica.js"></script>
+    <title>Antarctica</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <div class="paragraph">
+                <p id="text">Hello Dora the Explorer! Welcome to Antarctica, the world's southernmost and fifth largest continent, and its landmass is almost wholly covered by a vast ice sheet.</p>
+
+                <button id="next" onclick="change()"><img src="../images/right.png" alt="right" width="100%"></button>
+                <button id="previous" onclick="change2()" style="display: none;"><img src="../images/left.png" alt="left" width="100%"></button>
+
+                <button id = "imgButton" type = "button" style="display: none;" onclick="openModal()"><img src="../images/img.png" width="100%"></button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <p>Global Warming in Antarctica</p>
+                        <img src="../images/antarctica9.jpg" alt="Global Warming" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                
+                <button id = "imgButton2" type = "button" style="display: none;" onclick="openModal2()"><img src="../images/img.png" width="100%"></button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <p>Ice Loss and Warmer Water</p>
+                        <img src="../images/antarctica10.jpg" alt="Ice Loss and Warmer Water" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button id = "imgButton3" type = "button" style="display: none;" onclick="openModal3()"><img src="../images/img.png" width="100%"></button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <p>Penguin Populations Shrinking</p>
+                        <img src="../images/antarctica11.jpg" alt="Penguin Populations Shrinking" width="100%">
+                        <p>Penguin Populations Shrinking</p>
+                        <img src="../images/antarctica12.jpg" alt="Penguin Populations Shrinking" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button id = "imgButton4" type = "button" style="display: none;" onclick="openModal4()"><img src="../images/img.png" width="100%"></button>
+                <div id="id04" class="modal">   
+                    <div class="container">
+                        <p>Scotia Sea</p>
+                        <img src="../images/antarctica1.jpg" alt="Scotia Sea" width="100%">
+                        <p>Ross Ice Shelf</p>
+                        <img src="../images/antarctica2.jpg" alt="Ross Ice Shelf" width="100%">
+                        <p>Cape Evans</p>
+                        <img src="../images/antarctica3.jpg" alt="Cape Evans" width="100%">
+                        <p>Drake Passage</p>
+                        <img src="../images/antarctica4.jpg" alt="Drake Passage" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button id = "imgButton5" type = "button" style="display: none;" onclick="openModal5()"><img src="../images/img.png" width="100%"></button>
+                <div id="id05" class="modal">   
+                    <div class="container">
+                        <p>Weddell Seal</p>
+                        <img src="../images/antarctica5.jpg" alt="Weddell Seal" width="100%">
+                        <p>Emperor Penguin</p>
+                        <img src="../images/antarctica6.jpg" alt="Emperor Penguin" width="100%">
+                        <p>Albatross</p>
+                        <img src="../images/antarctica7.jpg" alt="Albatross" width="100%">
+                        <p>Humpback Whale</p>
+                        <img src="../images/antarctica8.jpg" alt="Humpback Whale" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="penguin">
+            <img src="../images/antarctica_penguin.png" width="100%">
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>

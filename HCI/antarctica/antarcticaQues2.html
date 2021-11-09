@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="antarctica.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="antarcticaQues.js"></script>
+    <title>Question 2 - Antarctica</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <h1>Question 2</h1> 
+            <p id="ques">What is the effect of global warming?</p>
+            <div id="option-buttons" class="btn-grid">
+                <button class="btn" onclick="openModal()">Lower Sea Levels</button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Average temperatures in the Arctic are rising twice as fast as they are elsewhere on earth, and the world's ice sheets are melting fast. This not only has grave consequences for the region's people, wildlife, and plants; its most serious impact may be on rising sea levels. By 2100, it's estimated our oceans will be one to four feet higher, threatening coastal systems and low-lying areas, including entire island nations and the world's largest cities, including New York, Los Angeles, and Miami as well as Mumbai, Sydney, and Rio de Janeiro.
+                        </h3>
+                        <img src="../images/antarctica17.jpg" alt="Higher Sea Levels" width="100%">
+                        <p>Higher Sea Levels</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn1" onclick="openModal2(), changeColor()">Lower Wildlife Extinction Rate</button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">According to the Intergovernmental Panel on Climate Change's 2014 assessment, many land, freshwater, and ocean species are shifting their geographic ranges to cooler climes or higher altitudes, in an attempt to escape warming. They're changing seasonal behaviors and traditional migration patterns, too. And yet many still face "increased extinction risk due to climate change." Indeed, a 2015 study showed that vertebrate species—animals with backbones, like fish, birds, mammals, amphibians, and reptiles—are disappearing 114 times faster than they should be, a phenomenon that has been linked to climate change, pollution, and deforestation.
+                        </h3>
+                        <img src="../images/antarctica18.jpg" alt="Polar Bear Extinction" width="100%">
+                        <p>Polar Bear Extinction</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="openModal3()">Dirtier Air</button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <h2>CORRECT ANSWER!</h2>
+                        <h3 style="text-align: justify;">Rising temperatures also worsen air pollution by increasing ground level ozone, which is created when pollution from cars, factories, and other sources react to sunlight and heat. Ground-level ozone is the main component of smog, and the hotter things get, the more of it we have. Dirtier air is linked to higher hospital admission rates and higher death rates for asthmatics. It worsens the health of people suffering from cardiac or pulmonary disease. And warmer temperatures also significantly increase airborne pollen, which is bad news for those who suffer from hay fever and other allergies.
+                        </h3>
+                        <img src="../images/antarctica19.jpg" alt="deforestation" width="100%">
+                        <p>Dirty Air</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+            </div>   
+            <div class="penguin">
+            <img src="../images/antarctica_penguin.png" width="100%">
+        </div>
+        <a href="antarcticaQues3.html"><button id="next2"><img src="../images/right.png" alt="right" width="100%"></button></a>
+        <a href="antarcticaQues1.html"><button id="previous2"><img src="../images/left.png" alt="right" width="100%"></button></a>
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>

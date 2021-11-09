@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="antarctica.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="antarcticaQues.js"></script>
+    <title>Question 1 - Antarctica</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <h1>Question 1</h1> 
+            <p id="ques">What causes global warming?</p>
+            <div id="option-buttons" class="btn-grid">
+                <button class="btn" onclick="openModal()">Renewable Energy</button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">In any discussion about global warming, renewable energy usually tops the list of changes the world can implement to stave off the worst effects of rising temperatures. That's because renewable energy sources such as solar and wind don't emit carbon dioxide and other greenhouse gases that contribute to global warming.
+                        </h3>
+                        <img src="../images/antarctica13.jpg" alt="Renewable Energy" width="100%">
+                        <p>Renewable Energy</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="openModal2()">Drive Fuel-Efficient Vehicle</button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Gas-smart cars, such as hybrids and fully electric vehicles, save fuel and money. Relative to a national fleet of vehicles that averaged only 28.3 miles per gallon in 2011, Americans will spend $80 billion less at the pump each year and cut their automotive emissions by half. 
+                        </h3>
+                        <img src="../images/antarctica15.png" alt="Fully Electical Vehicle" width="100%">
+                        <p>Fully Electical Vehicle</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn1" onclick="openModal3(), changeColor()">Burning Fossil Fuels</button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <h2>CORRECT ANSWER!</h2>
+                        <h3 style="text-align: justify;">When we burn fossil fuels like coal, and gas to create electricity or power our cars, we release CO2 pollution into the atmosphere.
+
+                        </h3>
+                        <img src="../images/antarctica16.jpg" alt="deforestation" width="100%">
+                        <p>Fossil Fuels Burning</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+            </div>   
+            <div class="penguin">
+            <img src="../images/antarctica_penguin.png" width="100%">
+        </div>
+        <a href="antarcticaQues2.html"><button id="next2"><img src="../images/right.png" alt="right" width="100%"></button></a>
+        <a href="antarctica.html"><button id="previous2"><img src="../images/left.png" alt="right" width="100%"></button></a>
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>
