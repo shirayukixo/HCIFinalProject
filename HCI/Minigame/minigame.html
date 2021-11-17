@@ -17,8 +17,36 @@
     </h2>
     
     <div id="game_facts">
-        Game tutorial and fact goes here
-    </div>
+        <span onclick="openBar(),typing()">Guides</span> </div>
+
+        <!--Guidelines Main Map-->
+        <div id="myBar" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
+        <div class="overlay-content">   
+                <img src="../images/southAmerica_toucan.png" width="150" height="150">
+                <p id="typeInstruction"></p>
+        </div>
+        </div>
+        <script>
+        var i = 0;
+        var txt = 'Tips: Click on 2 identical animal cards to play the game';
+        var speed = 40;
+        function typing() { //Typing Effect 
+            if (i < txt.length){
+                document.getElementById("typeInstruction").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typing, speed);}
+        }
+
+        //Open Bar, Close Bar
+        function openBar() {
+        document.getElementById("myBar").style.display = "block";
+        }
+
+        function closeBar() {
+        document.getElementById("myBar").style.display = "none";
+        }
+    </script>  
 
     <!-- The game by adding and removing class name such as "Visible" or "Matched" to changed the content of the page -->
     <div class="game_container">
