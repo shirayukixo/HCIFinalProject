@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Dosis', sans-serif;
+    background: #fffef2;
+}
+.audio{
+    position: absolute;
+    width: 60px;
+    left: 50px;
+    top: 60px;
+}
+.mic{
+    position: absolute;
+    width: 50px;
+    left: 58px;
+    top: 150px;
+}
+
+.droplet{
+    position: absolute;
+    width: 150px;
+    left: 1310px;
+    top: 35px;
+
+}
+
+.score{
+    position: absolute;
+    left: 55px;
+    top: 10px;
+    font-family: 'Delius', cursive;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+    border: none;
+    font-size: 35px;
+}
+
+.back {
+    position: absolute;
+    left: 1000px;
+    top: 570px;
+    z-index: 1;
+}
+.back button{
+    background: #E77D5C;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+    font-family: 'Delius', cursive;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #EEEDED;
+    border: none;
+    font-size: 30px;
+}
+.back button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #E77D5C;
+}
+.questionblock{
+    position: absolute;
+    width: 1105px;
+    height: 450px;
+    left: 200px;
+    top: 100px;
+    z-index: -1; /*put this div behind*/
+}
+.rectangle{
+    width: 100%;
+    height: 100%;
+    background-color: #E6B8A2;
+    border-radius: 15px;
+    box-shadow: 0px, 4px, 6px rgba(0, 0, 0, 0.3);
+}
+.rectangle h1{
+    position: absolute;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: normal;
+    color: #000;
+    font-size: 40px;
+    left: 70px;
+}
+#ques{
+    position: absolute;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: normal;
+    color: #000;
+    font-size: 36px;
+    text-align: justify;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+.koala{
+    position: absolute;
+    width: 285px;
+    left: 410px;
+    top: 330px;
+    z-index: 1; /*put this div in front*/
+}
+
+.paragraph{
+    position: absolute;
+    width: 950px;
+    height: 300px;
+    left: 80px;
+    top: 10px;
+}
+#text{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: normal;
+    color: #000;
+    font-size: 50px;
+    text-align: justify;
+}
+#next {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    left: 1000px;
+    top: 140px;
+    width: 150px;
+}
+#next:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#next2 {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    left: 1080px;
+    top: 150px;
+    width: 150px;
+}
+#next2:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#previous {
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    left: -210px;
+    top: 140px;
+    width: 150px;
+
+}
+#previous:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#previous2 {
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    left: -125px;
+    top: 150px;
+    width: 150px;
+
+}
+#previous2:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.btn-grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, auto);    
+    row-gap: 25%;
+    column-gap: 10%;
+    margin-top: 15%;
+    margin-left: 60px;
+}
+
+.btn, .btn1, #newGameButton, #exitButton{
+    background-color: rgb(233, 161, 113);
+    border-radius: 25px;
+    padding: 10px 55px;
+    border: none;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 30px;
+    width: 450px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+}
+#newGameButton, #exitButton{
+    width: 300px;
+}
+#newGameButton{
+    position: absolute;
+    left: -10px;
+}
+#exitButton{
+    position: absolute;
+    left: 650px;
+}
+#imgButton, #imgButton2, #imgButton3, #imgButton4, #imgButton5 {
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    left: 0px;
+    top: 350px;
+    width: 50px;
+
+}
+#imgButton:hover, #imgButton2:hover, #imgButton3:hover, #imgButton4:hover, #imgButton5:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.btn:hover, .btn1:hover, #newGameButton:hover, #exitButton:hover{
+    background-color: white;
+    color: rgb(233, 161, 113);
+    cursor: pointer;
+}
+.btn1:visited{
+    background-color: white;
+    color: rgb(233, 161, 113);
+}
+.nextbtn{
+    float: left;
+    width: 50%;
+    background-color: rgb(233, 161, 113);
+    color: white;
+}
+.button {
+    background: #428bca;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #3876ac;
+    cursor: pointer;
+  }
+  
+.container{
+    padding: 16px;
+    text-align: center;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+}
+.modal h1{
+    position: absolute;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+.close{
+    position: absolute;
+    color: #ccc;
+    font-size: 100px;
+    left: 1300px;
+    top: 0px;
+
+}
+.close:focus, .close:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="australia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="australia.js"></script>
+    <title>Australia</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <div class="paragraph">
+                <p id="text">Hello Dora the Explorer! Welcome to Australia, the world's sixth largest continent, and the largest country by area in Oceania.</p>
+
+                <button id="next" onclick="change()"><img src="../images/right.png" alt="right" width="100%"></button>
+                <button id="previous" onclick="change2()" style="display: none;"><img src="../images/left.png" alt="left" width="100%"></button>
+
+                <button id = "imgButton" type = "button" style="display: none;" onclick="openModal()"><img src="../images/img.png" width="100%"></button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <p>Australia</p>
+                        <img src="../images/australia.jpg" alt="Australia" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                
+                <button id = "imgButton2" type = "button" style="display: none;" onclick="openModal2()"><img src="../images/img.png" width="100%"></button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <p>Koala</p>
+                        <img src="../images/auskoala1.jpg" alt="Koala" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button id = "imgButton3" type = "button" style="display: none;" onclick="openModal3()"><img src="../images/img.png" width="100%"></button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <p>City view</p>
+                        <img src="../images/auscityview.jpg" alt="City View" width="100%">
+                        <p>Nature</p>
+                        <img src="../images/ausnature.jpg" alt="Nature View " width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button id = "imgButton4" type = "button" style="display: none;" onclick="openModal4()"><img src="../images/img.png" width="100%"></button>
+                <div id="id04" class="modal">   
+                    <div class="container">
+                        <p>North Territory</p>
+                        <img src="../images/ausnorthter.jpg" alt="North Territory" width="100%">
+                        <p>Kakadu National Park</p>
+                        <img src="../images/auskakadu.jpg" alt="Kakadu National Park" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+                <button id = "imgButton5" type = "button" style="display: none;" onclick="openModal5()"><img src="../images/img.png" width="100%"></button>
+                <div id="id05" class="modal">   
+                    <div class="container">
+                        <p>Deforestation</p>
+                        <img src="../images/ausdeforestation.jpeg" alt="Deforestation Seal" width="100%">
+                        <p>Koala lost its home</p>
+                        <img src="../images/ausdeforestation1.jpg" alt="Koala lost its home" width="100%">
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="koala">
+            <img src="../images/auskoala.png" width="100%">
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>

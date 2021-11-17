@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="australia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="ques.js"></script>
+    <title>Question 2 - Australia</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <h1>Question 2</h1> 
+            <p id="ques">What is habitat loss?</p>
+            <div id="option-buttons" class="btn-grid">
+                <button class="btn" onclick="openModal()">A person, company, or country that makes, grows, or supplies goods or commodities for sale.</button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Manufacturing goods and commodities do not cause the habitat loss, it could be more toword pollution while it does not impact the natures.
+                        </h3>
+                        <img src="../images/ausmanufacturing.jpg" alt="Manufacturing" width="100%">
+                        <p>Manufacturing</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn1" onclick="openModal2(), changeColor()">Uses economic services or commodities</button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Use economic services such as tours, does not cause habitat loss because tour is restricted to go to prohibited area. While purchase commodities that mainly made of plastic, cotton or cloth to make souvenirs does not harm the natures.
+                        </h3>
+                        <img src="../images/austour.jpg" alt="Tourism" width="100%">
+                        <p>Tourism</p>
+                        <img src="../images/auscommodity.jpg" alt="deforestation" width="100%">
+                        <p>Koala Doll</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="openModal3()">Is a process by  which natural habitat becomes incapable of supporting its native species.</button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <h2>CORRECT ANSWER!</h2>
+                        <h3 style="text-align: justify;">As mentioned above, incapble of supporting include lack of shelter and food. Animal needs shelter to prevent from hunted and seasonal climate and food for itself or its prey to survive in the part of food chain.
+                        </h3>
+                        <img src="../images/aushabitatloss.jpg" alt="habitat loss" width="100%">
+                        <p>Ape loss their shelter</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+            </div>   
+        <div class="koala">
+            <img src="../images/auskoala.jpg" width="100%">
+        </div>
+        <a href="australiaQues3.html"><button id="next2"><img src="../images/right.png" alt="right" width="100%"></button></a>
+        <a href="australiaQues1.html"><button id="previous2"><img src="../images/left.png" alt="right" width="100%"></button></a>
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>

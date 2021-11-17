@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="australia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="ques.js"></script>
+    <title>Question 3 - Australia</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <h1>Question 3</h1> 
+            <p id="ques">How to prevent habitat loss?</p>
+            <div id="option-buttons" class="btn-grid">
+                <button class="btn" onclick="openModal()">Spreading out farms and urban developments.</button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Spreading out farms and urban developments required more land, hence this enchance habitat destruction.
+                        </h3>
+                        <img src="../images/ausspread.jpg" alt="City View" width="100%">
+                        <p>A city that is full of building</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn1" onclick="openModal2(), changeColor()">Finding balance between what humans and animal need.</button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <h2>CORRECT ANSWER!</h2>
+                        <h3 style="text-align: justify;">The resources that humans need is in the woods or below the grounds that is unexpoited yet, therefore a balance between humans and animal need is necessary to control or decline habitat loss.
+                        </h3>
+                        <img src="../images/ausbalance.png" alt="balance of urban and natures" width="100%">
+                        <p>Balance of Urban and Natures</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="openModal3()">Decreasing animal and plant populatios.</button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Decreasing animal or plant population do not help the situation because these actions are far too extreme and harm the natures.
+                        </h3>
+                        <img src="../images/ausdecreasingpopulation.jpg" alt="decreasing population" width="100%">
+                        <p>Population of plant and animal has declined</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+            </div>   
+        <div class="koala">
+            <img src="../images/auskoala.jpg" width="100%">
+        </div>
+        <a href="australiaCompleted.html"><button id="next2"><img src="../images/right.png" alt="right" width="100%"></button></a>
+        <a href="australiaQues2.html"><button id="previous2"><img src="../images/left.png" alt="right" width="100%"></button></a>
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>

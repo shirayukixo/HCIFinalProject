@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="australia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="ques.js"></script>
+    <title>Question 1 - Australia</title>
+</head>
+<body> 
+    <div id="icon">
+        <img src="../images/audio.svg" class="audio">
+        <img src="../images/mic.svg" class="mic">
+    </div>
+    <div class="droplet">
+        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
+        <div class="score">100</div>
+    </div>
+    <div class="questionblock">
+        <div class="rectangle">
+            <h1>Question 1</h1> 
+            <p id="ques">Which of the these is the cause deforestation?</p>
+            <div id="option-buttons" class="btn-grid">
+                <button class="btn" onclick="openModal()">Urbanization</button>
+                <div id="id01" class="modal">   
+                    <div class="container">
+                        <h2>CORRECT ANSWER!</h2>
+                        <h3 style="text-align: justify;">Urbanization means industrial growth and needed some expansion of land, hence exploit the jungle which cause deforestation.
+                        </h3>
+                        <img src="../images/ausdeforestation.png" alt="deforestation" width="100%">
+                        <p>Deforestation</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="openModal2()">Cutting down the tree in your backyard</button>
+                <div id="id02" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Cutting down tree in your backyard which is a property or land that is already exploit does not cause deforestation since it is already happen.
+                        </h3>
+                        <img src="../images/auschoptree.jpg" alt="chop down tree" width="100%">
+                        <p>Chopping a tree in exploited area</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+                <button class="btn1" onclick="openModal3(), changeColor()">Buying a christmas tree during holidays</button>
+                <div id="id03" class="modal">   
+                    <div class="container">
+                        <h2>WRONG ANSWER!</h2>
+                        <h3 style="text-align: justify;">Buying a tree would not be big issue because it is authorized to chop down the tree with proper monitoring or grown by farmer who own an orchad.
+                        </h3>
+                        <img src="../images/ausbuytree.jpg" alt="buy christmas tree" width="100%">
+                        <p>Planting trees</p>
+                        <span onclick="closeModal()"class="close" title="close modal">&times;</span>
+                    </div>
+                </div>
+            </div>   
+        <div class="koala">
+            <img src="../images/auskoala.jpg" width="100%">
+        </div>
+        <a href="australiaQues2.html"><button id="next2"><img src="../images/right.png" alt="right" width="100%"></button></a>
+        <a href="australia.html"><button id="previous2"><img src="../images/left.png" alt="right" width="100%"></button></a>
+        </div>
+    </div>
+    
+    <div class="back">
+        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
+    </div>
+    
+</body>
+</html>
