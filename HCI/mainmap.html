@@ -13,6 +13,7 @@ body {
     background: radial-gradient(#71d6e4, #71a7e4);
     background-image: url("world.jpg");
     background-size: 100% 100%;
+    font-family: Delius, cursive; 
 }
 
 .lock4 {position:absolute;right:11%;top:78%;width:35px;height:50px;}
@@ -33,6 +34,7 @@ body {
 .button8 {position:absolute;right:70%;top:62%;}
 .button9 {position:absolute;right:33%;top:92%;}
 .button10 {position:absolute;right:65%;top:46%;}
+.button11 {position:absolute;right:2%;top:22%;} /*Design in Tutorial Button*/
 
 /* CSS */
 .button-5 {
@@ -78,13 +80,96 @@ body {
   background-color: #c85000;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
+    
+/* tutorial */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay p {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay p, .overlay .closebtn:hover{
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: rgb(219, 211, 211);
+}
+
+@media screen and (max-height: 450px) {
+  .overlay p {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+  /*End of tutorial*/
 }
 </style>
 </head>
+    
 <body> 
 <a href="Dialogue/dialogue.html"><button class="button-5 button1" role="button">Asia</button></a>
 <a href="index.html"><button class="button-5 button2" role="button">Back</button></a>
 <a href="mainmap.html"><button class="button-5 button3" role="button">Reward</button></a>
+<span onclick="openBar(),typing()"><button class="button-5 button11" role="button">Tutorial</button></span>
+
+<!--Tutorial Main Map-->
+<div id="myBar" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
+  <div class="overlay-content">   
+        <img src="images/southAmerica_toucan.png" width="150" height="150">
+        <p id="typeInstruction"></p>
+  </div>
+</div>
+
+<script>
+  var i = 0;
+  var txt = 'To start your journey, please click on one of the unlocked continents.';
+  var speed = 40;
+function typing() { //Typing Effect 
+      if (i < txt.length){
+        document.getElementById("typeInstruction").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typing, speed);}
+ }
+
+ //Open Bar, Close Bar
+function openBar() {
+  document.getElementById("myBar").style.display = "block";
+}
+
+function closeBar() {
+  document.getElementById("myBar").style.display = "none";
+}
+</script> <!-- End of Tutorial Main Map-->
+     
 <a href="mainmap.html"><button class="button-5 button4" role="button">&nbsp;Australia&nbsp;</button></a>
 <a href="mainmap.html"><button class="button-5 button5" role="button">Africa</button></a>
 <a href="mainmap.html"><button class="button-5 button6" role="button">Europe</button></a>
