@@ -13,7 +13,40 @@
     <title>Minigame - Antarctica</title>
 </head>
 <body> 
+    <div class="guide">
+    <span onclick="openBar(),typing()"><button type="button">Guides</button></span></div>
 
+    <!--Guidelines Main Map-->
+  
+    <div id="myBar" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
+      <div class="overlay-content">   
+            <img src="../images/southAmerica_toucan.png" width="150" height="150">
+            <p id="typeInstruction"></p>
+      </div>
+    </div>
+    <script>
+		var i = 0;
+		var txt = 'Tips: Help the penguin to pick up the ice cube using your keyboard arrow keys.';
+		var speed = 40;
+
+		function typing() { //Typing Effect 
+			if (i < txt.length){
+			document.getElementById("typeInstruction").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typing, speed);}
+		}
+
+		//Open Bar, Close Bar
+		function openBar() {
+		document.getElementById("myBar").style.display = "block";
+		}
+
+		function closeBar() {
+		document.getElementById("myBar").style.display = "none";
+		}
+    </script>
+    
     <div class="droplet">
         <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
         <div class="score">100</div>
