@@ -7,6 +7,7 @@
 
   <!-- Bootstrap 4 CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="antarcticaMinigame.css">
 
   <title>Minigame - Antartica</title>
 </head>
@@ -22,6 +23,39 @@
     <button class="btn btn-info" onClick="reset()">Reset</button>
   </div> 
 </div>
+
+  <!--Guidelines-->
+<div class="guide">
+  <span onclick="openBar(),typing()"><button type="button">Guides</button></span></div>
+<div id="myBar" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
+  <div class="overlay-content">   
+        <img src="../images/southAmerica_toucan.png" width="150" height="150">
+        <p id="typeInstruction"></p>
+  </div>
+</div>
+<script>
+var i = 0;
+var txt = 'Tips: Please guess a word and fill up the blanks by clicking on the alphabets one by one';
+var speed = 40;
+
+function typing() { //Typing Effect 
+  if (i < txt.length){
+  document.getElementById("typeInstruction").innerHTML += txt.charAt(i);
+  i++;
+  setTimeout(typing, speed);}
+}
+
+//Open Bar, Close Bar
+function openBar() {
+document.getElementById("myBar").style.display = "block";
+}
+
+function closeBar() {
+document.getElementById("myBar").style.display = "none";
+}
+</script>
+  
 
 <script src='./antarticaMinigame.js'></script>
 </body>
