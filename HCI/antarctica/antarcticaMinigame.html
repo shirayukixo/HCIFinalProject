@@ -1,71 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="antarcticaMinigame.css">
-    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    
-    
-    <title>Minigame - Antarctica</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>Minigame - Antartica</title>
 </head>
-<body> 
-    <div class="guide">
-    <span onclick="openBar(),typing()"><button type="button">Guides</button></span></div>
+<body>
+<div class="container">
+  <h1 class="text-center">Hangman</h1>
+  <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+  <div class="text-center">
+    <img id='hangmanPic' src="../images/0.jpg" alt="">
+    <p>Guess what causes global warming:</p>
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div>
+    <button class="btn btn-info" onClick="reset()">Reset</button>
+  </div> 
+</div>
 
-    <!--Guidelines Main Map-->
-  
-    <div id="myBar" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
-      <div class="overlay-content">   
-            <img src="../images/southAmerica_toucan.png" width="150" height="150">
-            <p id="typeInstruction"></p>
-      </div>
-    </div>
-    <script>
-		var i = 0;
-		var txt = 'Tips: Help the penguin to pick up the ice cube using your keyboard arrow keys.';
-		var speed = 40;
-
-		function typing() { //Typing Effect 
-			if (i < txt.length){
-			document.getElementById("typeInstruction").innerHTML += txt.charAt(i);
-			i++;
-			setTimeout(typing, speed);}
-		}
-
-		//Open Bar, Close Bar
-		function openBar() {
-		document.getElementById("myBar").style.display = "block";
-		}
-
-		function closeBar() {
-		document.getElementById("myBar").style.display = "none";
-		}
-    </script>
-    
-    <div class="droplet">
-        <img src="../images/droplets collected block.svg" alt="droplets" width="100%">
-        <div class="score">100</div>
-    </div>
-    <div class="questionblock">
-        
-            <h1 id = "title">Game<h1>
-            <img id = "char-img" src = "../images/antarctica24.png">
-            <script src = "antarcticaMinigamemain.js"></script>
-            <script src = "antarcticaMinigamescore.js"></script>
-            
-            
-        
-
-    </div>
-    
-    <div class="back">
-        <a href="../mainmap.html"><button type="button">Back to Main Map</button></a>
-    </div>
-    
+<script src='./antarticaMinigame.js'></script>
 </body>
 </html>
