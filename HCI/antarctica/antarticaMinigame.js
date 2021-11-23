@@ -1,11 +1,6 @@
 var globalWarmingCauses= [
-	"deforestation",
-	"overfishing",
-	"industrialization",
-	"farming",
-	"consumerism",
-  "waste"
-]
+	"deforestation"
+	]
 
 let answer = '';
 let maxWrong = 6;
@@ -18,7 +13,7 @@ function randomWord() {
 }
 
 function generateButtons() {
-  let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
+  let buttonsHTML = 'abdefgijmnoprstu'.split('').map(letter =>
     `
       <button
         class="btn btn-lg btn-primary m-2"
