@@ -1,0 +1,68 @@
+.guide button{ /*GJ*/
+    background: #E77D5C;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Delius', cursive;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #EEEDED;
+    border: none;
+    font-size: 20px;
+    position:absolute;
+    top:1%;
+    left:1%;
+}
+
+/* Guidelines */
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay p {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay p, .overlay .closebtn:hover{
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: rgb(219, 211, 211);
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay p {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
